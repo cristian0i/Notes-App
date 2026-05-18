@@ -1,7 +1,7 @@
 import { createContext, useContext, useState, useEffect } from "react";
 import { registerRequest, loginRequest, verifyTokenRequest, logoutRequest } from "../api/auth";
 import Cookies from "js-cookie";
-
+// Contexto de autenticación para manejar el estado de autenticación en toda la aplicación
 export const AuthContext = createContext();
 export const useAuth = () => {
   const context = useContext(AuthContext);
